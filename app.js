@@ -1,10 +1,20 @@
 function correct(){
-    const para = document.createElement("p");
-    para.textContent = "Correct!";
-    document.body.appendChild(para);
+    const video = document.getElementById('video2');
+    video.style.position = 'fixed';
+    video.style.top = '0';
+    video.style.left = '0';
+    video.style.width = '100vw';
+    video.style.height = '100vh';
+    video.style.objectFit = 'cover';
+    video.play();
 }
 function incorrect(){
-    const para = document.createElement("p");
-    para.textContent = "Incorrect!";
-    document.body.appendChild(para);
+    const video = document.getElementById('video');
+    video.style.position = 'fixed';
+    video.style.top = '0';
+    video.style.left = '0';
+    video.style.width = '100vw';
+    video.style.height = '100vh';
+    video.style.objectFit = 'cover';
+    video.play();
 }

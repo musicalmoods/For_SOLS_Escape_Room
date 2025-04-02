@@ -1,5 +1,6 @@
 .body{
     background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
 }
 .image{
@@ -63,4 +64,35 @@
 }
 .container{
     text-align: center;
+}
+.credits{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: teal;
+}
+.video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    height: auto;
+}
+.player{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: auto;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
