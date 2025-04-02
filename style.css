@@ -3,14 +3,11 @@
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
 }
-.image{
+.background-video{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-bottom: auto;
-    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    width: 33.33%;
     height: auto;
 }
 .button-green{
@@ -68,7 +65,7 @@
 .credits{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     color: teal;
 }
 .video{

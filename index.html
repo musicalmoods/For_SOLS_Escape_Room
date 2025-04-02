@@ -9,10 +9,12 @@
 </head>
 <body class="body">
     <h1 class="credits">Website by Shlok Shah</h1>
-    <image src = "assets/SOLS_image.png" alt="SOLS Image" class="image">
+    <video class="background-video" autoplay muted loop id="background-video">
+        <source src="assets/timer_vid.mp4" type="video/mp4">
+    </video>
     <div class="container">
         <h1>Welcome to SOLS Escape Room</h1>
-        <p>Your task is to choose the right wire in order to escape from this challenge and save Daniel</p>
+        <p>Your task is to choose the right wire in order to disarm the bomb.<br><br>After your escape, find Daniel and rescue him.</p>
         <button class="button-red" onClick=correct()>RED</button>
         <button class="button-green" onClick=incorrect()>GREEN</button>
         <button class="button-blue" onClick=incorrect()>BLUE</button>
