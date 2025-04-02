@@ -33,7 +33,7 @@ function startTimer() {
         explosionVideo.play().catch(error => {
             console.error('Error playing the video:', error);
         });
-    }, 5*60*1000+6000);
+    }, 5*60*1000+8000);
 }
 
 document.addEventListener('DOMContentLoaded', startTimer);
