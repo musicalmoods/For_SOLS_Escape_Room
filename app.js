@@ -1,4 +1,4 @@
-function correct(){
+function correct() {
     const video = document.getElementById('video2');
     video.style.position = 'fixed';
     video.style.top = '0';
@@ -8,7 +8,8 @@ function correct(){
     video.style.objectFit = 'cover';
     video.play();
 }
-function incorrect(){
+
+function incorrect() {
     const video = document.getElementById('video');
     video.style.position = 'fixed';
     video.style.top = '0';
@@ -19,12 +20,20 @@ function incorrect(){
     video.play();
 }
 
-const explosionVideo = document.getElementById('video');
-
 function startTimer() {
+    const explosionVideo = document.getElementById('video');
     setTimeout(() => {
         explosionVideo.style.display = 'block';
-        explosionVideo.play();
-    }, 5 * 60 * 1000 + 6000);
+        explosionVideo.style.position = 'fixed';
+        explosionVideo.style.top = '0';
+        explosionVideo.style.left = '0';
+        explosionVideo.style.width = '100vw';
+        explosionVideo.style.height = '100vh';
+        explosionVideo.style.objectFit = 'cover';
+        explosionVideo.play().catch(error => {
+            console.error('Error playing the video:', error);
+        });
+    }, 5*60*1000+6000);
 }
-window.onload = startTimer;
+
+document.addEventListener('DOMContentLoaded', startTimer);
