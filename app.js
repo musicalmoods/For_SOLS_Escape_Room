@@ -18,3 +18,13 @@ function incorrect(){
     video.style.objectFit = 'cover';
     video.play();
 }
+
+const explosionVideo = document.getElementById('video');
+
+function startTimer() {
+    setTimeout(() => {
+        explosionVideo.style.display = 'block';
+        explosionVideo.play();
+    }, 5 * 60 * 1000 + 6000);
+}
+window.onload = startTimer;
